@@ -9,7 +9,7 @@ import { useFetchWeather } from "./hook/usefetchWeather";
 
 
 function App() {
-  const[cityInput, setCityInput] = useState()
+  const[cityInput, setCityInput] = useState('')
 
   const [cidade, setCidade] = useState();
   const [clima, setClima] = useState();

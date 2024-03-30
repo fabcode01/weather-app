@@ -2,7 +2,8 @@ import { useState } from "react";
 const apiKey = "3bdc36e7a053eb68f97f77d12109f1b4";
 
 export const useFetchWeather = (cityInput) => {
-  const baseurl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&appid=${apiKey}&lang=pt_br`;
+  const city = cityInput.trim()
+  const baseurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`;
 
   const [cidade, setCidade] = useState("");
   const [clima, setClima] = useState();
