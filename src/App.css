@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background: linear-gradient(to top, rgb(255, 225, 141), rgb(199, 199, 251));
+  background-repeat: no-repeat;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top, rgb(2, 2, 59), rgb(42, 42, 113));
+  padding: 10px;
+
+  border-radius: 20px;
+  max-width: 375px;
+  margin: auto;
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.input-container input{
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  height: 15px;
+  
+}
+
+.input-container button{
+  background-color: transparent;
+  border: none;
+}
+
+.input-container input:focus{
+  outline: none;
+  background-color: aliceblue;
+  font-weight: bold;
+}
+
+.icon-search{
+  width: 25px;
+  padding: 5px;
+  background-color: rgb(211, 233, 252);
+  border-radius: 20px;
+
+  transition: all 0.5s;
+}
+
+.icon-search:active{
+  scale: 1.05;
+}
+
+/* =========================================== */
+
+.res-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, rgb(2, 2, 59), rgb(42, 42, 113));
+    padding: 10px;
+    height: 370px;
+    
+    border-radius: 20px;
+    max-width: 375px;
+    margin: auto;
+    margin-top: 10px;
+  
+}
+
+.city-container{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+
+.fa-location-dot{
+  color: rgb(217, 68, 68);
+}
+
+
+.temp-container h1{
+  font-size: 4.5em;
+  color: white;
+}
+
+
+
+.description-container{
+  color: white;
+  
+}
+
+.l1-desc{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+}
+
+.descricao, .umidade{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.vento{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 3px;
+  align-items: center;
+}
+
+i{
+  color: rgb(242, 153, 153);
+}
+
+
+
+
+/* ====================== */
+
+.github{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 2, 59);
+  gap: 5px;
+  
+  width: 120px;
+  height: 30px;
+  color: white;
+  padding: 10px;
+
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+
+.github img{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+.github:hover{
+  scale: 1.02;
+}
